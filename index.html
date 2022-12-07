@@ -15,17 +15,17 @@
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
   <style>
-    :root {
-      --white: #E8F1F2;
-      --magenta: hsl(300, 69%, 71%);
-      --violet: hsl(257, 40%, 49%);
-    }
-
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     /* font-family: 'Poppins', sans-serif; */
 
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     /* font-family: 'Open Sans', sans-serif; */
+
+    :root {
+      --white: #E8F1F2;
+      --magenta: hsl(300, 69%, 71%);
+      --violet: hsl(257, 40%, 49%);
+    }
 
     * {
       padding: 0;
@@ -46,25 +46,75 @@
       background-position: center;
       background-size: contain;
       background-color: var(--violet);
+      padding: 0 5rem;
       position: relative;
     }
 
     .logo {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 2rem;
+      left: 5rem;
+      max-width: fit-content;
+      width: 100%;
     }
 
     main {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      width: 100%;
+    }
+
+    .image {
+      max-width: 60rem;
+      max-height: 40rem;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .text h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 48px;
+      max-width: 35rem;
+      width: 100%;
+      color: var(--white);
+    }
+
+    .text p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      max-width: 32rem;
+      width: 100%;
+      line-height: 2rem;
+      color: var(--white);
+    }
+
+    .text button {
+      outline: 0;
+      border: 0;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      color: var(--violet);
+      border-radius: 3rem;
+      height: 3.5rem;
+      width: 13rem;
     }
 
     .attribution {
       position: absolute;
       bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
       display: block;
       padding: 1rem 0;
       text-align: center;
@@ -88,9 +138,7 @@
   <img class="logo" src="images/logo.svg" alt="logo.svg">
 
   <main>
-    <div class="image">
-      <img src="images/illustration-mockups.svg" alt="illustration-mockups.svg">
-    </div>
+    <img class="image" src="images/illustration-mockups.svg" alt="illustration-mockups.svg">
 
     <div class="text">
       <h1>Build The Community Your Fans Will Love</h1>

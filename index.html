@@ -21,6 +21,12 @@
       --violet: hsl(257, 40%, 49%);
     }
 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    /* font-family: 'Poppins', sans-serif; */
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    /* font-family: 'Open Sans', sans-serif; */
+
     * {
       padding: 0;
       margin: 0;
@@ -40,15 +46,20 @@
       background-position: center;
       background-size: contain;
       background-color: var(--violet);
+      position: relative;
     }
 
-    .attribution {
-      font-size: 11px;
-      text-align: center;
+    .logo {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
+    main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
 
     .attribution {
@@ -74,12 +85,24 @@
 
 <body>
 
-  <!-- Build The Community Your Fans Will Love
+  <img class="logo" src="images/logo.svg" alt="logo.svg">
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-  Create connections with your users as you engage in genuine discussion.
+  <main>
+    <div class="image">
+      <img src="images/illustration-mockups.svg" alt="illustration-mockups.svg">
+    </div>
 
-  Register -->
+    <div class="text">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.</p>
+      <button>Register</button>
+    </div>
+  </main>
+
+  <div class="social">
+
+  </div>
 
   <footer class=" attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>

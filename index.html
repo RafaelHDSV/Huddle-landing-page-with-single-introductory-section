@@ -4,14 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="author" content="Rafael Henrique de Sousa Vieira">
+  <meta name="keywords"
+    content="programação, html, css, frontend mentor, Huddle landing page with single introductory section, Rafael Henrique de Sousa Vieira, Frontend, Front, end">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="A perfect challenge for beginners, this project will get you working with a two column layout.">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    :root {
+      --white: #E8F1F2;
+      --magenta: hsl(300, 69%, 71%);
+      --violet: hsl(257, 40%, 49%);
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-image: url('images/bg-desktop.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-color: var(--violet);
+    }
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -20,23 +50,40 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      padding: 1rem 0;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    .attribution p {
+      font-size: 12px;
+      color: var(--white);
+    }
+
+    .attribution a {
+      font-size: 12px;
+      color: var(--magenta);
+    }
   </style>
 </head>
 
 <body>
 
-  Build The Community Your Fans Will Love
+  <!-- Build The Community Your Fans Will Love
 
   Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
   Create connections with your users as you engage in genuine discussion.
 
-  Register
+  Register -->
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  <footer class=" attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
   </footer>
 </body>
 

@@ -29,7 +29,6 @@ body {
     background-position: center;
     background-size: contain;
     background-color: var(--violet);
-    padding: 0 5rem;
     position: relative;
 }
 
@@ -44,16 +43,15 @@ body {
 main {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 5rem;
     width: 100%;
 }
 
 .image {
-    max-width: 60rem;
-    max-height: 37rem;
+    max-width: 50rem;
     width: 100%;
-    height: 100vh;
 }
 
 .text {
@@ -146,133 +144,71 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-    /* font-family: 'Poppins', sans-serif; */
-
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-    /* font-family: 'Open Sans', sans-serif; */
-
-    :root {
-        --white: #E8F1F2;
-        --magenta: hsl(300, 69%, 71%);
-        --violet: hsl(257, 40%, 49%);
-    }
-
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-    }
-
     body {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-image: url('images/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
         width: 100%;
         height: 100vh;
-        background-image: url('images/bg-desktop.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        background-color: var(--violet);
-        padding: 0 5rem;
-        position: relative;
+
     }
 
     .logo {
-        position: absolute;
-        top: 2rem;
-        left: 5rem;
-        max-width: fit-content;
-        width: 100%;
+        width: 40%;
+        left: 1rem;
     }
 
     main {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
     }
 
     .image {
-        max-width: 60rem;
-        max-height: 37rem;
+        max-width: 30rem;
         width: 100%;
-        height: 100vh;
     }
 
     .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
+        align-items: center;
     }
 
     .text h1 {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        font-size: 48px;
-        max-width: 35rem;
-        width: 100%;
-        color: var(--white);
+        font-size: 26px;
+        text-align: center;
     }
 
     .text p {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        max-width: 32rem;
-        width: 100%;
-        line-height: 2rem;
-        color: var(--white);
+        font-size: 15px;
+        text-align: center;
+        line-height: normal;
     }
 
     .text button {
-        outline: 0;
-        border: 0;
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-        color: var(--violet);
-        border-radius: 3rem;
-        height: 3.5rem;
-        width: 13rem;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-        cursor: pointer;
-        transition: .5s all ease-in-out;
-    }
-
-    .text button:hover {
-        color: var(--white);
-        background-color: var(--magenta);
+        font-size: 16px;
+        text-align: center;
     }
 
     .social {
         position: absolute;
         bottom: 2rem;
-        right: 5rem;
+        left: 50%;
+        transform: translate(-50%);
         display: flex;
         gap: 1rem;
+        padding: 2rem 0 0 0;
     }
 
     .social_logo {
-        border-radius: 50%;
-        padding: .5rem;
-        width: 2.7rem;
-        cursor: pointer;
-        transition: .5s all;
-        border: 1px solid var(--white);
-        fill: var(--white);
-    }
-
-    .social_logo:hover {
-        border: 1px solid var(--magenta);
-        fill: var(--magenta);
+        min-width: 2.7rem;
     }
 
     .attribution {
+        display: none;
+        opacity: 0;
         position: absolute;
         bottom: 0;
         left: 50%;

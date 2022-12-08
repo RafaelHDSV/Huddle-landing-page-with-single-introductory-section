@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: URL SOLUTION HERE
-- Live Site URL: URL SITE HERE
+- Solution URL: https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-vDZYMsIXc1
+- Live Site URL: https://huddle-landing-page-single-rafael.netlify.app
 
 ### Screenshot
 
@@ -48,4 +48,4 @@ Users should be able to:
 - HTML
 - CSS
 
-[⬆ Back to the top](#frontend-mentor---huddle-landing-page-with-single-introductory-section)<br>
+[⬆ Back to the top](#frontend-mentor---huddle-landing-page-with-single-introductory-section-solution)<br>

@@ -124,7 +124,7 @@ main {
 
 .attribution {
     position: absolute;
-    bottom: 0;
+    bottom: 0.25rem;
     left: 50%;
     transform: translate(-50%);
     display: block;
@@ -228,4 +228,11 @@ main {
         font-size: 12px;
         color: var(--magenta);
     }
+}
+
+/* board22 visit-count */
+.attribution #va-visits {
+  font-size: inherit;
+  color: inherit;
+  margin-top: 0.25rem;
 }
